@@ -1,0 +1,176 @@
+.red-box {
+  height: 400px;
+  width: 400px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+.color-change-box {
+  height: 300px;
+  width: 300px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+.boxes-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.blue-box {
+  height: 300px;
+  width: 300px;
+  background-color: #0008ff;
+  margin-right: 150px;
+}
+
+.green-box {
+  height: 300px;
+  width: 300px;
+  background-color: #22ff00;
+}
+
+.clearfix {
+  padding-left: calc(50% - 300px);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-red-box {
+  height: 300px;
+  width: 300px;
+  background-color: #ff0000;
+  float: left;
+}
+
+.float-blue-box {
+  height: 300px;
+  width: 300px;
+  background-color: #0008ff;
+  float: left;
+}
+
+.flexbox-list-reverse {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 300px;
+}
+
+.a-box-reverse {
+  height: 300px;
+  width: 300px;
+  background-color: #ff0000;
+}
+
+.b-box-reverse {
+  height: 300px;
+  width: 300px;
+  background-color: #0008ff;
+}
+
+.c-box-reverse {
+  height: 300px;
+  width: 300px;
+  background-color: #ff8400;
+}
+
+.flexbox-list-order {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 300px;
+}
+
+.a-box-order {
+  height: 300px;
+  width: 300px;
+  background-color: #00ff51;
+}
+
+.b-box-order {
+  height: 300px;
+  width: 300px;
+  background-color: #d4ff00;
+}
+
+.c-box-order {
+  height: 300px;
+  width: 300px;
+  background-color: #ff00e1;
+}
+
+.boxes-positions {
+  position: relative;
+}
+
+.red-box-back {
+  height: 300px;
+  width: 300px;
+  background-color: #ff0000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.blue-box-flont {
+  height: 300px;
+  width: 300px;
+  background-color: #0008ff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-100%);
+  z-index: 2;
+  display: none;
+}
+
+.green-box-side {
+  height: 300px;
+  width: 300px;
+  background-color: #00ff51;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+@media screen and (max-width: 959px) {
+  .red-box {
+    height: 200px;
+    width: 200px;
+  }
+
+  .color-change-box {
+    background-color: #007bff;
+  }
+
+  .blue-box {
+    margin-right: 50px;
+  }
+
+  .float-red-box {
+    float: none;
+  }
+
+  .float-blue-box {
+    float: none;
+  }
+
+  .flexbox-list-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .c-box-order {
+    order: -1;
+  }
+
+  .blue-box-flont {
+    display: block;
+  }
+}
